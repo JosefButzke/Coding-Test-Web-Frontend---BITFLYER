@@ -1,87 +1,54 @@
-# Welcome to React Router!
+# Coding Test Web Frontend — Trifa
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A React Router v7 application built with React 19, TypeScript, and Tailwind CSS v4.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## Commands
 
-## Features
+| Command             | Description                                           |
+| ------------------- | ----------------------------------------------------- |
+| `npm run dev`       | Start the development server with HMR                 |
+| `npm run build`     | Build the app for production                          |
+| `npm run start`     | Serve the production build                            |
+| `npm run typecheck` | Generate React Router types and run TypeScript checks |
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
+## Folder Structure
 
 ```
+.
+├── app/
+│   ├── components/          # Reusable UI components
+│   │   ├── icons.tsx
+│   │   ├── LanguageDot.tsx
+│   │   ├── Pagination.tsx
+│   │   ├── RepoCard.tsx
+│   │   ├── SearchBar.tsx
+│   │   ├── SearchFilters.tsx
+│   │   └── SkeletonCard.tsx
+│   ├── routes/              # Route modules
+│   │   └── home.tsx
+│   ├── types/               # TypeScript type definitions
+│   │   └── github.ts
+│   ├── utils/               # Utility functions and constants
+│   │   ├── constants.ts
+│   │   └── format.ts
+│   ├── welcome/             # Welcome page assets
+│   │   ├── logo-dark.svg
+│   │   ├── logo-light.svg
+│   │   └── welcome.tsx
+│   ├── app.css              # Global styles
+│   ├── root.tsx             # Root layout component
+│   └── routes.ts            # Route definitions
+├── public/                  # Static assets
+│   └── favicon.ico
+├── Dockerfile
 ├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
+├── react-router.config.ts
+├── tsconfig.json
+└── vite.config.ts
 ```
 
-## Styling
+Coding Test Web Frontend - Trifa
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+Author: Josef Stein Butzke
 
----
-
-Built with ❤️ using React Router.
+AI: Claude CLI
