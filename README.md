@@ -47,7 +47,7 @@ A React Router v7 application built with React 19, TypeScript, and Tailwind CSS 
 └── vite.config.ts
 ```
 
-Coding Test Web Frontend - Trifa
+Coding Test Web Frontend - bitflyer
 
 Author: Josef Stein Butzke
 
